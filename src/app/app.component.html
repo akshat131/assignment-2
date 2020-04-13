@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ALUMINATION</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!--  -->
+      <div [ngClass]="dis ? 'disappear' : 'homepage'" >
+        <img id="ba" src="../assets/images/backhover.svg" alt="ALUMINATION background, image could not be reloded" >
+        <img id="br" src="../assets/images/brandinghover.svg"alt="ALUMINATION IITB, image could not be reloded">
+        <img id="bi" src="../assets/images/birdhover.svg" alt="animated BIRD , image could not be reloded">
+    </div>
+ 
+
+
+
+
+  <div class="whole">
+  
+  <nav>
+    <input type="checkbox" id="check" >
+    <label for="check" class="checkbtn" (click)="onclick()"   >
+      <i class=" {{clickv}}"  aria-hidden="true"></i>
+   </label>
+
+
+
+      <label class="logo">Alumination</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+  </nav>
+  </div>
+
+
+
+
+<!--
+-->
+
+  <div [ngClass]="dis ? 'disappear' : 'asd'"  style="background-color:#130b2d; color: white;">
+    <div class="container">
+    <h1 id="abcd" style="font-weight: bolder;position: relative; text-align: center;">SCHEDULE</h1>
+  </div>
+ 
+  
+  <img  id="imagestand" src="/assets/images/signstand.svg" alt="Image couldn't load">
+  <img id="image0" title="day 0"  (click)="Img0()"  src="assets/images/board+0.svg" alt="Image couldn't load">
+  <img id="image1" title="day 1"  (click)="Img1()"  src="assets/images/board+1.svg" alt="Image couldn't load">
+  <img id="image2" title="day 2" (click)="Img2()"  src="assets/images/board+2.svg" alt="Image couldn't load">
+
+
+
+
+  <img class="da" id="img0" src="assets/images/scheduleDay0.png" alt="Image couldn't load">
+  <img class="da" id="img1" src="assets/images/scheduleDay1.png" alt="Image couldn't load">
+  <img class="da" id="img2" src="assets/images/scheduleDay2.png" alt="Image couldn't load">
+  </div>
+</body>
+</html>
